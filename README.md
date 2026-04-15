@@ -1,6 +1,6 @@
 # Les Délices - Sitio Web Oficial
 
-Sitio web informativo para la confitería, restaurante y cafetería Les Délices, ubicada en Rambla Punta del Este.
+Sitio web informativo para la confitería, restaurante y cafetería Les Délices.
 
 ## Descripción
 
@@ -22,7 +22,7 @@ Proyecto desarrollado con Vue 3 + Vite + TailwindCSS que presenta una experienci
 3. **Productos**: Galería de productos con cards interactivas
 4. **Historia**: Storytelling sobre el local y sus valores
 5. **Horarios**: Información de atención por categorías
-6. **Contacto**: Formulario de reservas e información de contacto
+6. **Contacto**: Rreservas e información de contacto
 7. **Footer**: Información básica y enlaces rápidos
 
 ## Tecnologías
