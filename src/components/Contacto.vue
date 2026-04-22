@@ -70,7 +70,15 @@
                   <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                 </svg>
                 <p class="text-verde-oscuro font-medium">Mapa interactivo</p>
-                <p class="text-cafe/70 text-sm">Rambla Punta del Este 1234</p>
+                <p class="text-cafe/70 text-sm">Les Délices</p>
+                <a 
+                  href="https://www.google.com/maps/place/Les+Délices/@-34.9593372,-54.9468939,17z/data=!3m1!4b1!4m6!3m5!1s0x9575056d0a8315d7:0xd8b7887f59648e28!8m2!3d-34.9593417!4d-54.942023!16s%2Fg%2F1q6jzc23p?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-dorado hover:text-dorado-claro transition-colors duration-300 text-sm underline mt-2 inline-block"
+                >
+                  Ver en Google Maps
+                </a>
               </div>
             </div>
           </div>

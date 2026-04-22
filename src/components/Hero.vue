@@ -2,12 +2,12 @@
   <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
-      <div class="w-full h-full bg-gradient-to-br from-verde-oscuro/80 to-verde-medio/80"></div>
       <img 
-        src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-        alt="Cafetería elegante" 
-        class="w-full h-full object-cover opacity-40"
+        src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+        alt="Interior elegante cafetería" 
+        class="w-full h-full object-cover"
       />
+      <div class="absolute inset-0 bg-gradient-to-br from-verde-oscuro/80 to-verde-oscuro/40"></div>
     </div>
 
     <!-- Content -->
