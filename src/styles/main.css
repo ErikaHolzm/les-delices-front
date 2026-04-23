@@ -5,12 +5,173 @@
 /* Estilos globales */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Eliminar scroll horizontal */
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background-color: #faf8f3;
   color: #3e2723;
+  overflow-x: hidden; /* Eliminar scroll horizontal */
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Eliminar margen en dispositivos móviles */
+* {
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Responsive para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive para grid de productos */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+}
+
+/* Responsive para texto */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1rem !important;
+    line-height: 1.6;
+  }
+}
+
+/* Eliminar espacio blanco en móviles y prevenir scroll horizontal */
+@media (max-width: 768px) {
+  section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Asegurar que todos los elementos hijos no se desborden */
+  section > * {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+}
+
+/* Prevenir scroll horizontal en todos los elementos */
+* {
+  max-width: 100%;
+}
+
+/* Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  
+  .section-padding {
+    padding: 48px 12px !important;
+  }
+}
+
+/* Fix para elementos que pueden causar scroll horizontal */
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.w-full {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Responsive para botones */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    width: 100% !important;
+    max-width: 280px !important;
+    text-align: center !important;
+  }
+}
+
+/* Truncar texto en móviles */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary:hover {
-  background-color: #f4e5c2;
+  background-color: #b8941f;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }

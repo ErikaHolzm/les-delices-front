@@ -75,7 +75,7 @@
                   href="https://www.google.com/maps/place/Les+Délices/@-34.9593372,-54.9468939,17z/data=!3m1!4b1!4m6!3m5!1s0x9575056d0a8315d7:0xd8b7887f59648e28!8m2!3d-34.9593417!4d-54.942023!16s%2Fg%2F1q6jzc23p?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-dorado hover:text-dorado-claro transition-colors duration-300 text-sm underline mt-2 inline-block"
+                  class="text-dorado hover:text-[#b8941f] transition-colors duration-300 text-sm underline mt-2 inline-block"
                 >
                   Ver en Google Maps
                 </a>

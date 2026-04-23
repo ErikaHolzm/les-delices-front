@@ -1,19 +1,19 @@
 <template>
-  <section id="productos" class="section-padding bg-white">
-    <div class="container mx-auto">
+  <section id="productos" class="section-padding bg-white overflow-x-hidden">
+    <div class="container mx-auto max-w-full">
       <!-- Header -->
-      <div class="text-center mb-16 animate-slide-up">
-        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-verde-oscuro mb-4">
+      <div class="text-center mb-8 sm:mb-12 lg:mb-16 animate-slide-up px-4">
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-verde-oscuro mb-3 sm:mb-4 leading-tight">
           Nuestros Productos
         </h2>
-        <p class="text-lg text-cafe/80 max-w-2xl mx-auto">
+        <p class="text-base sm:text-lg text-cafe/80 max-w-2xl mx-auto px-4">
           Descubre nuestra selección de productos artesanales, elaborados con los mejores ingredientes y mucho amor
         </p>
-        <div class="w-24 h-1 bg-dorado mx-auto mt-6"></div>
+        <div class="w-16 sm:w-20 lg:w-24 h-1 bg-dorado mx-auto mt-4 sm:mt-6"></div>
       </div>
 
       <!-- Product Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-0">
         <div 
           v-for="(producto, index) in productos" 
           :key="index"
@@ -21,7 +21,7 @@
           :style="{ animationDelay: `${index * 100}ms` }"
         >
           <!-- Image Container -->
-          <div class="relative h-64 overflow-hidden group">
+          <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden group">
             <img 
               :src="producto.imagen" 
               :alt="producto.nombre"
@@ -33,28 +33,20 @@
           </div>
 
           <!-- Content -->
-          <div class="p-6">
-            <h3 class="font-serif text-xl font-bold text-verde-oscuro mb-3">
+          <div class="p-4 sm:p-5 md:p-6">
+            <h3 class="font-serif text-lg sm:text-xl font-bold text-verde-oscuro mb-2 sm:mb-3 leading-tight">
               {{ producto.nombre }}
             </h3>
-            <p class="text-cafe/70 mb-4 leading-relaxed">
+            <p class="text-sm sm:text-base text-cafe/70 mb-3 sm:mb-4 leading-relaxed line-clamp-3">
               {{ producto.descripcion }}
             </p>
-            <div class="flex justify-between items-center">
-              <span class="text-dorado font-bold text-lg">
-                ${{ producto.precio }}
-              </span>
-              <button class="btn-secondary text-sm px-4 py-2">
-                Ordenar
-              </button>
-            </div>
           </div>
         </div>
       </div>
 
       <!-- Call to Action -->
-      <div class="text-center mt-16">
-        <a href="#contacto" class="btn-primary">
+      <div class="text-center mt-8 sm:mt-12 lg:mt-16">
+        <a href="#contacto" class="btn-primary inline-block">
           Consultar Nuestro Menú Completo
         </a>
       </div>
